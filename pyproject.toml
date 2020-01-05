@@ -9,6 +9,9 @@ license = "MIT"
 python = "^3.8"
 click = "^7.0"
 
+[tool.poetry.scripts]
+rdme = "rdme:main"
+
 [tool.poetry.dev-dependencies]
 
 [build-system]
