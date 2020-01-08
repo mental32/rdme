@@ -41,15 +41,15 @@ def main(
     for section in map(str.title, sections):
         if make_index:
             index_entries.append(f"  - [{section}](#{section})")
-            tag = f"# [{section}](#Index)"
+            tag = f"## [{section}](#Index)"
         else:
-            tag = f"# {section}"
+            tag = f"## {section}"
 
         section_entries.append(tag)
 
     if make_index and index_entries:
         index_body = "\n".join(index_entries)
-        index = f"\n# Index\n\n{index_body}\n"
+        index = f"\n## Index\n\n{index_body}\n"
     else:
         index = ""
 
